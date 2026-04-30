@@ -281,21 +281,22 @@ body.overlay-open {
 
 @media (max-width: 900px) {
   body {
-    font-size: 24px;
-    line-height: 0.98;
+    font-size: 25px;
+    line-height: 1;
   }
 
   .home {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .pane,
   .pane-left {
-    min-height: 50vh;
+    min-height: auto;
   }
 
   .pane-right {
-    min-height: 50vh;
+    min-height: auto;
   }
 
   h1 {
@@ -320,5 +321,177 @@ body.overlay-open {
 
   .toolbox-slot {
     width: 150px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 21px;
+    line-height: 1.04;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .pane {
+    padding: 14px;
+  }
+
+  .pane-left {
+    display: contents;
+    gap: 56px;
+    font-size: 17px;
+  }
+
+  .studio-block {
+    order: 1;
+    padding: 14px;
+  }
+
+  .pane-right {
+    order: 2;
+    flex: 1;
+  }
+
+  h1 {
+    margin-bottom: 44px;
+    font-size: 22px;
+  }
+
+  .project-years {
+    gap: 30px;
+  }
+
+  .project-group {
+    gap: 13px;
+  }
+
+  .year {
+    padding-left: 0;
+  }
+
+  .project-link {
+    width: 100%;
+    line-height: 1.08;
+  }
+
+  .today {
+    order: 3;
+    margin-top: 0;
+    padding: 0 14px 14px;
+    font-size: 14px;
+  }
+
+  .pane-right {
+    gap: 42px;
+    padding-top: 28px;
+  }
+
+  .intro {
+    line-height: 1.14;
+  }
+
+  .contact-links {
+    gap: 4px;
+    margin-top: 30px;
+  }
+
+  .right-bottom {
+    align-items: end;
+    gap: 14px;
+    margin-bottom: 0;
+  }
+
+  .toolbox-slot,
+  .symbol {
+    width: min(42vw, 150px);
+  }
+
+  .toolbox-slot {
+    border-width: 1.5px;
+    font-size: 15px;
+  }
+
+  .overlay-bar {
+    gap: 5px;
+    min-height: 0;
+    padding: 14px;
+    font-size: 16px;
+    line-height: 1.05;
+  }
+
+  .project-scroll {
+    padding: 0 14px 48px;
+  }
+
+  .project-grid {
+    gap: 10px;
+  }
+
+  .project-card {
+    border-width: 1.5px;
+  }
+
+  .project-card.text-card {
+    aspect-ratio: auto;
+    min-height: 42vw;
+    padding: 10px 0;
+    line-height: 1.08;
+  }
+
+  .text-card p + p {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 19px;
+  }
+
+  .pane {
+    padding: 12px;
+  }
+
+  .studio-block {
+    padding: 12px;
+  }
+
+  .pane-left {
+    gap: 44px;
+    font-size: 16px;
+  }
+
+  h1 {
+    margin-bottom: 36px;
+    font-size: 20px;
+  }
+
+  .project-years {
+    gap: 26px;
+  }
+
+  .pane-right {
+    gap: 34px;
+    padding-top: 22px;
+  }
+
+  .overlay-bar,
+  .project-scroll {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .today {
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+  }
+
+  .project-card.text-card {
+    min-height: 50vw;
   }
 }
