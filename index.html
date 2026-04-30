@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>강두치워크스</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="home" aria-label="강두치워크스 메인">
+      <section class="pane pane-left" aria-label="프로젝트 리스트">
+        <div class="studio-block">
+          <h1>강두치워크스</h1>
+
+          <div class="project-years">
+            <div class="project-group">
+              <p class="year">2026</p>
+              <button class="project-link" type="button" data-project="0">
+                강두치워크스 웹사이트
+              </button>
+              <button class="project-link" type="button" data-project="1">
+                움직이는 포스터 실험
+              </button>
+            </div>
+
+            <div class="project-group">
+              <p class="year">2025</p>
+              <button class="project-link" type="button" data-project="2">
+                사운드 아카이브 리서치
+              </button>
+              <button class="project-link" type="button" data-project="3">
+                작은 전시를 위한 그래픽
+              </button>
+            </div>
+
+            <div class="project-group">
+              <p class="year">2024</p>
+              <button class="project-link" type="button" data-project="4">
+                타입과 장면의 기록
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="today">©2026.GangduchiWorks</p>
+      </section>
+
+      <section class="pane pane-right" aria-label="스튜디오 소개">
+        <div class="intro">
+          <p>
+            강두치워크스는 그래픽, 웹, 출판, 전시의 경계를 느슨하게 오가며 작업하는 스튜디오입니다.
+            이미지와 문장, 화면과 종이 사이에서 필요한 형태를 찾습니다.
+            프로젝트마다 다른 속도와 밀도를 관찰하고, 오래 남는 인상을 만드는 일을 좋아합니다.
+          </p>
+
+          <nav class="contact-links" aria-label="연락처">
+            <a href="#" aria-label="이력서">이력서</a>
+            <a href="mailto:hello@gangdoochi.works">이메일</a>
+            <a href="https://instagram.com/" target="_blank" rel="noreferrer">인스타그램</a>
+          </nav>
+        </div>
+
+        <div class="right-bottom">
+          <div class="toolbox-slot" aria-label="작업문의 공구통 이미지 자리" role="img">
+            <span>작업문의</span>
+          </div>
+          <img class="symbol" src="images/symbol.png" alt="강두치워크스 심볼">
+        </div>
+      </section>
+    </main>
+
+    <section class="project-overlay" aria-hidden="true">
+      <header class="overlay-bar">
+        <button class="home-link" type="button">강두치워크스</button>
+        <p class="project-meta">강두치워크스 웹사이트, 2026</p>
+      </header>
+
+      <div class="project-scroll">
+        <div class="project-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
